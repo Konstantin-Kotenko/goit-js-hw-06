@@ -16,7 +16,7 @@ const galleryEl = document.querySelector('ul.gallery');
 console.log(galleryEl);
 for (const img of images) {
   galleryEl.insertAdjacentHTML(
-    'afterend',
+    'beforeend',
     `<li class= item> <img class= item__img src= ${img.url} alt= ${img.alt}>`
   );
 }
