@@ -13,7 +13,6 @@ const images = [
   },
 ];
 const galleryEl = document.querySelector('ul.gallery');
-console.log(galleryEl);
 for (const img of images) {
   galleryEl.insertAdjacentHTML(
     'beforeend',
