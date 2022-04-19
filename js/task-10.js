@@ -18,7 +18,6 @@ function createBoxes(amount) {
     box.style.backgroundColor = getRandomHexColor();
     width += 10;
     height += 10;
-    console.log(box);
     boxes.push(box);
   }
   return refs.divBoxes.append(...boxes);
@@ -26,6 +25,8 @@ function createBoxes(amount) {
 const destroyBoxes = () => {
   const boxes = refs.divBoxes.querySelectorAll('div');
   boxes.forEach((box) => box.remove());
+  width = 30;
+  height = 30;
   refs.input.value = null;
 };
 
